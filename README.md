@@ -1,12 +1,12 @@
 # homework_2_1
-1) Создал таблицу
+1) Создал таблицу :
 CREATE TABLE Sales (
     SaleID SERIAL PRIMARY KEY,
     SaleDate DATE NOT NULL,
     Amount DECIMAL(10, 2) NOT NULL
 );
 
-3) Добавил данные
+3) Добавил данные :
 INSERT INTO Sales (SaleDate, Amount) VALUES
 ('2021-01-15', 120.50),
 ('2023-03-20', 85.00),
@@ -19,7 +19,7 @@ INSERT INTO Sales (SaleDate, Amount) VALUES
 ('2025-12-01', 180.00),
 ('2024-10-20', 75.50);
 
-3) Функция для определения трети года
+3) Функция для определения трети года :
 CREATE OR REPLACE FUNCTION GetYearPart(sale_date DATE)
 RETURNS INT
 AS $$
